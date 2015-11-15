@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 11/14/2015 5:38:55 PM -->
+<GameData>
+	<Language_en_US>
+		<!-- Dyke (Improvement) -->
+		<Row Tag="TXT_KEY_IMPROVEMENT_DYKE">
+			<Text>Dyke</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_DYKE_PEDIA">
+			<Text>A dyke is a form of land-reclamation built to prevent the sea or a river from covering an area. The modern word dike or dyke most likely derives from the Dutch word "dijk", with the construction of dykes in Frisia (now part of the Netherlands and Germany) well attested as early as the 11th century. [NEWLINE][NEWLINE]You can combine dykes with a chain of roads, which allows units to move more quickly across the map. Additionally, connecting cities to your capital will provide a large amount of [ICON_GOLD] gold per turn.</Text>
+		</Row>
+		
+		<!-- Dyke (Route) -->
+		<Row Tag="TXT_KEY_ROUTE_DYKE">
+			<Text>Dyke</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

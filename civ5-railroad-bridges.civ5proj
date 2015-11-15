@@ -7,14 +7,12 @@
     <Guid>9225c97b-b967-46ae-904a-406293c58189</Guid>
     <ModVersion>1</ModVersion>
     <Stability>Alpha</Stability>
-    <Teaser># civ5-railroad-bridges
-Allows roads and railroads to be constructed on Coast tiles in Civilisation V.</Teaser>
-    <Description># civ5-railroad-bridges
-Allows roads and railroads to be constructed on Coast tiles in Civilisation V.</Description>
+    <Teaser>Allows roads and railroads to be constructed on Coast tiles in Civilisation V.</Teaser>
+    <Description>Allows roads and railroads to be constructed on Coast tiles in Civilisation V.</Description>
     <Authors>Animorphus</Authors>
     <SpecialThanks>
     </SpecialThanks>
-    <AffectsSavedGames>true</AffectsSavedGames>
+    <AffectsSavedGames>false</AffectsSavedGames>
     <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
     <SupportsSinglePlayer>true</SupportsSinglePlayer>
     <SupportsMultiplayer>true</SupportsMultiplayer>
@@ -23,6 +21,14 @@ Allows roads and railroads to be constructed on Coast tiles in Civilisation V.</
     <AssemblyName>civ5-railroad-bridges</AssemblyName>
     <RootNamespace>civ5-railroad-bridges</RootNamespace>
     <ModReferences />
+    <Homepage>http://benargo.github.io/civ5-railroad-bridges/</Homepage>
+    <ModActions>
+      <Action xmlns="">
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>XML/Units/CIV5Units.xml</FileName>
+      </Action>
+    </ModActions>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -36,6 +42,38 @@ Allows roads and railroads to be constructed on Coast tiles in Civilisation V.</
     <DeployMod>true</DeployMod>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="XML" />
+    <Folder Include="XML\Misc" />
+    <Folder Include="XML\NewText" />
+    <Folder Include="XML\NewText\EN_US" />
+    <Folder Include="XML\Terrain" />
+    <Folder Include="XML\Units" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="XML\Misc\CIV5Routes.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="XML\NewText\EN_US\CIV5GameTextInfos_Jon.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="XML\NewText\EN_US\CIV5GameTextInfos_Objects.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="XML\Terrain\CIV5Improvements.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="XML\Units\CIV5Builds.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="XML\Units\CIV5Units.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
 </Project>
